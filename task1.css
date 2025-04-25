@@ -1,0 +1,295 @@
+body{
+    margin: 0px;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 100px;
+    padding: 13px 0px;
+}
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    border: 2px solid white;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+nav ul li a:hover{
+    border: 2px solid black;
+}
+.link{
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+}
+.innerbox1 img{
+    height: 100%;
+    width: 55vw;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    height: 110vh;
+    background-color:rgb(251,251,253);
+}
+.innerbox2{
+    text-align: center;
+    align-content: center;
+    height: 100%;
+    display: grid;
+    gap: 16px;
+}
+.hed1{
+    font-size:70px ;
+    font-weight: bold;
+}
+.innerbox2 button{
+    background-color: rgb(251,251,253);
+    font-size: 20px;
+    padding: 20px 40px;
+    width: max-content;
+    margin: auto;
+}
+.innerbox2 button:hover{
+    background-color:rgb(246,176,0);
+    color: white;
+    border-color: rgb(246,176,0);
+    border-style: solid;
+}
+.para1,.freepik{
+    font-size: 21px;
+    width: 75%;
+    line-height: 40px;
+    margin: 0 auto;
+}
+.freepik a{
+    color: black;
+}
+.freepik a:hover{
+    text-decoration-color:green ;
+}
+/* ============================= */
+.box1{
+    display: grid;
+    gap: 50px;
+    text-align: center;
+    background-color: rgb(229,229,229);
+    padding: 50px 0px ;
+}
+.innerbox3{
+    display: flex;
+    margin:0px 100px;
+    gap: 40px;
+}
+.para2{
+    font-size: 21px;
+    font-style: italic;
+    line-height: 40px;
+    padding:0px 30px 30px;
+}
+.innerbox4{
+    background-color: white;
+    height:100%;
+}
+.hed3{
+    font-size: 45px;
+}
+/* ============PART 3================= */
+.box2{
+    text-align: center;
+    margin: 50px 100px;
+    display: grid;
+    gap: 20px;
+}
+.para3{
+    font-size: 21px;
+    line-height: 40px;
+    padding:0px 30px 30px;
+}
+.innerbox5{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+.innerbox6 img{
+    height: 293px;
+    width: 350px;
+}
+.innerbox6{
+    background-color:  rgb(229,229,229);
+}
+/* ============================= */
+.box3{
+    display: flex;
+    background-color: rgb(0,0,0);
+    color: white;
+    height: 135vh;
+}
+.innerbox7{
+    text-align: center;
+    display: grid;
+    gap: 16px;
+    width: 45vw;
+    align-content: center;
+    padding:10px ;
+}
+.innerbox7 button{
+    background-color: black;
+    font-size: 20px;
+    padding: 20px 40px;
+    width: max-content;
+    margin: auto;
+    color: white;
+    border: 2px solid white;
+}
+.innerbox7 .para3{
+    width: 63%;
+    margin: auto;
+}
+.innerbox7 button:hover{
+    background-color:rgb(246,176,0);
+    color: white;
+    border-color: rgb(246,176,0);
+    border-style: solid;
+}
+.box3 .freepik a{
+    color: white ;
+}
+.innerbox8{
+    width: 55vw;
+    height: inherit;
+    background-image: url(./pic13.jpg);
+    background-size:cover ;
+}
+
+/* ============================= */
+.box4{
+    text-align: center;
+    padding: 80px;
+    display: grid;
+    gap: 30px;
+}
+.innerbox9{
+    display: flex;
+    text-align: left;
+}
+.innerbox10{
+    width: 50%;
+    display: grid;
+    gap: 20px;
+}
+.hed2{
+    font-size: 48px;
+    font-weight: bold;
+}
+.para4{
+    font-size: 24px;
+    width: 35%;
+}
+.tel1{
+    font-size: 20px;
+    font-style: italic;
+}
+/* ============================= */
+footer{
+    background-color: rgb(51,51,51);
+    display: grid;
+    text-align: center;
+    padding: 50px 0px;
+    color: white;
+    gap: 80px;
+}
+.map{
+    height: 600px;
+}
+footer div a{
+    color: #F9B66F;
+}
+/* =============Animation================ */
+.innerbox1 img{
+    transform: rotate(0deg);
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-delay: 0.1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+}
+@keyframes rotate{
+    0% {
+        transform: rotate(-180deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+nav{
+    animation-name: blink;
+    animation-duration: 3s;
+
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+@keyframes blink {
+    0% {
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+/* =============Media Query================ */
+@media (max-width:768px){
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .innerbox1 img{
+        height: 100%;
+        width: 100%;
+    }
+    .innerbox3{
+        display: flex;
+        flex-direction: column;
+    }
+    .box3{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+    }
+    .innerbox7,.innerbox8 {
+        width: 100%;
+    }
+    .innerbox7 {
+        width: 100%;
+    }
+}
+@media(min-width:100px) and (max-width:425px){
+    nav{
+        display: grid;
+        text-align: center;
+        margin: 0px auto;
+        justify-content: center;
+    }
+    nav ul{
+        display: grid;
+    }
+    .innerbox9{
+        display: grid;
+    }
+    .innerbox10,.para4{
+        width: 100%;
+    }
+    .box2{
+        margin: 10px;
+    }
+}
+
